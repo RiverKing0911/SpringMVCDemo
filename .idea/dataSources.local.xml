@@ -5,5 +5,11 @@
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
     </data-source>
+    <data-source name="defaultPersistenceUnit/Hibernate" uuid="417b4844-36f5-431b-8584-a7c0f6b37740">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>springdemo.*</schema-pattern>
+      <default-schemas>springdemo.*</default-schemas>
+    </data-source>
   </component>
 </project>

@@ -20,9 +20,17 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="NewPersistenceUnit" />
+          <factory-entry name="defaultPersistenceUnit" value="417b4844-36f5-431b-8584-a7c0f6b37740" />
           <factory-entry name="noname-a.xml@0" value="1799c4d5-9990-4efe-93a4-5d2495ba6658" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
