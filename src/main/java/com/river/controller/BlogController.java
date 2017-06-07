@@ -66,6 +66,7 @@ public class BlogController {
     // 修改博文内容，页面
     @RequestMapping("/admin/blogs/update/{id}")
     public String updateBlog(@PathVariable("id") int id, ModelMap modelMap) {
+        System.out.println();
         BlogEntity blog = blogRepository.findOne(id);
         List<UserEntity> userList = userRepository.findAll();
         modelMap.addAttribute("blog", blog);
